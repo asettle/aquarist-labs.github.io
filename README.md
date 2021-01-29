@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # About
 
 Aquarist Labs is a [SUSE](https://suse.com/)-sponsored Open Source
