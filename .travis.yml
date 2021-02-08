@@ -1,13 +1,14 @@
 language: ruby
 rvm:
-  - 2.3
-script: "bundle exec jekyll build"
+- 2.3
+script: bundle exec jekyll build
 deploy:
   provider: pages
   skip_cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   keep_history: true
   on:
     branch: main
-notification:
-  slack: $TRAVIS_SLACK_TOKEN
+notifications:
+  slack:
+    secure: wTSRyTuYNWjLVbzCMywrUrN2nAA9Z4vrzD2sF14E/GsbDADePUqrYrgfmFQ/YC5TdEmbwFLrY1VnM/DPSRAmjwC/wBy+LbcCYDfGDBh65nGtTSMvAIHFenoVFiTh2A7Q+GXsSckkEh1nkVYGKM6Lr8ut7x44Kb0SSG7lI9s+LiwdQPR7n9fA0Atbqobrs+mZxd9ImVDZ7xQIFOqLvKcjjLSob70fiWlTAYH60rUYExaYzBLIz2JPJleUeBiFy/aaVphqS3lFp2hgzZKKjhzDlxWjLLyG9QztTcdyY5HKhIuM+4Ikvgxxcs3MT7/XHVxmGlprCBH30J8B8NZblU9HM9AnOe0OAobkHdekPiDfepx1E/bmt57S2mttyVRIOCSyVfrblLuNv/DGBBwFpbRhEvvki71RkJYwbWPaS1LrG0iHYbLw4OP7ikC3imv24nvpGmnCGq796169h8FrKOuVUREnlAgGmOmlgtgOktJGlxv972uOleKH/WFnMkv/rbx1rhT+c1B1gYw9bihA/QggNVC4pr4ntIHfMbyT+r9zlfYTy6ngOPbaRSz38UvTB8EJw4LvV//EUUSP+Xmunu/WeEtjNTUC8LZ4D/Lz7F/yFMI3TS5y7gRNL9vHvuUPh5A/KH+w70X8ML7pAIp2xtev74a+upQ+ke3+MFe3fOsh7TE=
