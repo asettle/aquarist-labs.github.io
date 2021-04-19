@@ -2,6 +2,8 @@
 list_title: "Blogs"
 ---
 
+![Aquarium Logo](/images/logo-concept-art.jpg)
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/aquarist-labs/aquarium?style=social)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/aquarist-labs/aquarium) ![Lines of code](https://img.shields.io/tokei/lines/github/aquarist-labs/aquarium) ![GitHub contributors](https://img.shields.io/github/contributors/aquarist-labs/aquarium) ![GitHub issues](https://img.shields.io/github/issues/aquarist-labs/aquarium) ![GitHub milestones](https://img.shields.io/github/milestones/all/aquarist-labs/aquarium)
