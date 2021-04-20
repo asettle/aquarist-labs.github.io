@@ -22,7 +22,7 @@ You will be able to find the backend bits in `src/gravel`, while the frontend
 bits are located in `src/glass`. We also have `wasser` (water) powering our CI.
 
 Check out our [From Zero to Hacking](https://github.com/aquarist-labs/aquarium/blob/main/doc/from-zero-to-hacking.md)
-quickstart to help you get off your feet.
+quickstart to help you get started.
 
 Join us on Slack! You can sign up [here](https://join.slack.com/t/aquaristlabs/shared_invite/zt-lsjrkw8m-Jj_zYAs84PfMsUGwvMDOFA).
 
