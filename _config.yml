@@ -1,4 +1,4 @@
-title: Aquarist Labs
+title: Aquarium by Aquarist Labs
 
 description: >-
   Experimenting on captive cephalopods since 2021
@@ -9,4 +9,3 @@ theme: minima
 minima:
   date_format: "%Y-%m-%d %H:%M"
   show_excerpts: true
-
