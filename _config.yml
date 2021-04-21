@@ -1,11 +1,25 @@
 title: Aquarium by Aquarist Labs
 
-description: >-
-  Experimenting on captive cephalopods since 2021
+description: >
+  This work is licensed under a Creative Commons
+  Attribution-ShareAlike 4.0 International License
 
 markdown: kramdown
 theme: minima
 
+# set to true to show excerpts on the homepage
+show_excerpts: false
+
 minima:
   date_format: "%Y-%m-%d %H:%M"
-  show_excerpts: true
+
+  # generate social links in footer
+  social_links:
+    github: aquarist-labs
+    slack: aquaristlabs.slack.com
+    # twitter:
+
+header_pages:
+  - about.md
+  - FAQ.md
+  - LICENSE.md
