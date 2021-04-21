@@ -2,5 +2,4 @@
 
 <ul class="social-media-list">
   {%- if social.github -%}<li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></li>{%- endif -%}
-  {%- if social.slack -%}<li><a rel="me" href="https://https://aquaristlabs.slack.com/" title="{{ social.slack | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/social-media-icon-slack.svg#github' | relative_url }}"></use></svg></a></li>{%- endif -%}
 </ul>
