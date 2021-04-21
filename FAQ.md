@@ -94,7 +94,9 @@ or join the [discussion](https://github.com/aquarist-labs/forum/discussions/12).
 
 **Q:** Does Aquarium support the same services and features as Ceph?
 
-**A:**
+**A:** We deliberately do not expose all features in order to simplify deployment
+and management for what we think are common or useful deployment scenarios.
+However, you will recognise 
 
 -----------
 
