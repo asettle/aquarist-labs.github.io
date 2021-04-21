@@ -6,6 +6,7 @@ list_title: "Blogs"
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/aquarist-labs/aquarium) ![Lines of code](https://img.shields.io/tokei/lines/github/aquarist-labs/aquarium) ![GitHub contributors](https://img.shields.io/github/contributors/aquarist-labs/aquarium) ![GitHub issues](https://img.shields.io/github/issues/aquarist-labs/aquarium) ![GitHub milestones](https://img.shields.io/github/milestones/all/aquarist-labs/aquarium)
 
+
 Aquarium is a [SUSE](https://suse.com/)-sponsored Open Source
 project to build an easy-to-use, rock-solid appliance wrapped around the
 [Ceph](http://ceph.io) project. The project started development in January 2021,
@@ -48,4 +49,4 @@ Whether this deployment layout can be set up on the current hardware can be
 determined by software and the user can be provided with the feedback (be it
 positive or negative).
 
-![Aquarium Logo](/images/logo-concept-art.jpg)
+![Aquarium Logo](/images/squido-v2.svg)
