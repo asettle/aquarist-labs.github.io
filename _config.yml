@@ -1,8 +1,8 @@
 title: Aquarium by Aquarist Labs
 
 description: >
-  This work is licensed under a Creative Commons
-  Attribution-ShareAlike 4.0 International License
+
+  Experimenting on captive cephalopods since 2021
 
 markdown: kramdown
 theme: minima
@@ -16,7 +16,6 @@ minima:
   # generate social links in footer
   social_links:
     github: aquarist-labs
-    slack: aquaristlabs.slack.com
     # twitter:
 
 header_pages:

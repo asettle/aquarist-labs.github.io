@@ -4,33 +4,19 @@
 
   <div class="wrapper">
 
+    <div class="social-links">
+      <a href="https://join.slack.com/t/aquaristlabs/shared_invite/zt-nphn0jhg-QYKw__It8JPMkUR_sArOug"><img src="images/social-media-icon-slack.svg" alt="Join us on Slack!" width="60" height="60"</a>
+      <a href="https://github.com/aquarist-labs/aquarium"><img src="images/GitHub-Mark-32px.png" alt="GitHub"</a>
+    </div>
+<br>
+    <div class="license">
+       <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="images/License-CC BY--SA 4.0-lightgrey.svg" alt="CCC BY SA 4.0"</a>
+    </div>
+<br>
     <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
       </div>
-    </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
     </div>
 
   </div>
