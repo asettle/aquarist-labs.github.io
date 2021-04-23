@@ -40,7 +40,7 @@ First, make sure you have the right packages installed - this step will
 need to be completed as `root`:
 
 ```shell
-zypper in ruby ruby-devel gcc-g++
+zypper in ruby ruby-devel gcc-c++
 ```
 
 Second, make sure that your user's environment is properly set up to
