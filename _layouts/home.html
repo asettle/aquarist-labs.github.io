@@ -9,11 +9,12 @@ layout: default
 
   {{ content }}
 
-
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
+    {% assign minutes = paginator.minutes %}
   {% else %}
     {% assign posts = site.posts %}
+    {% assign minutes = site.minutes %}
   {% endif %}
 
   <html>
@@ -59,27 +60,27 @@ layout: default
               {%- endfor -%}
             </ul>
         </div>
-          <div class="column" align="left">
-            {%- if posts.size > 0 -%}
-              <h2>Meeting minutes<h2/>
-            {%- endif -%}
-              <ul class="minutes-list">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {%- for minutes in minutes -%}
-                <li>
-                  <span class="minutes-meta">{{ minutes.date | date: date_format }}</span>
-                  <h3>
-                    <a class="minutes-link" href="{{ minutes.url | relative_url }}">
-                      {{ minutes.title | escape }}
-                    </a>
-                  </h3>
-                  {%- if site.show_excerpts -%}
-                    {{ minutes.excerpt }}
-                  {%- endif -%}
-                </li>
-                {%- endfor -%}
-              </ul>
-          </div>
+        <div class="column" align="left">
+          {%- if minutes.size > 0 -%}
+            <h2 class="post-list-heading">Meeting minutes</h2>
+          {%- endif -%}
+          <ul class="post-list">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {%- for minutes in minutes -%}
+            <li>
+              <span class="post-meta">{{ minutes.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ minutes.url | relative_url }}">
+                  {{ minutes.title | escape }}
+                </a>
+              </h3>
+              {%- if site.show_excerpts -%}
+                {{ minutes.excerpt }}
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
       </div>
    </body>
   </html>
