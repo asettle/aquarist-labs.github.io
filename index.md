@@ -16,6 +16,4 @@ an opinionated fashion. The Aquarium project is split into two clearly
 defined work streams: Gravel (backend) and Glass (frontend).
 
 On this website, you're invited to follow along our experiments on
-captive cephalopods in decorative containers! Please see [our license](https://aquarist-labs.github.io/LICENSE)
-and [our quickstart guide on how to
-contribute](https://aquarist-labs.github.io/docs/dev/contributing-to-the-website.html).
+captive cephalopods in decorative containers!
