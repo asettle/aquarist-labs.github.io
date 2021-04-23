@@ -23,6 +23,11 @@ header_pages:
   - FAQ.md
   - LICENSE.md
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+
 collections:
   minutes:
     output: true

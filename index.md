@@ -8,7 +8,7 @@ list_title: "Blogs"
 
 Aquarium is a [SUSE](https://suse.com/)-sponsored Open Source
 project to build an easy-to-use, rock-solid appliance wrapped around the
-[Ceph](http://ceph.io) project. The project started development in January 2021,
+[Ceph](https://ceph.io) project. The project started development in January 2021,
 and has become a passion project for the storage team at SUSE.
 
 We are investigating the beginnings of a new storage appliance project in
