@@ -3,40 +3,65 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
     {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+
+    {{ content }}
+
+    {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+      {% assign minutes = paginator.minutes %}
+    {% else %}
+      {% assign posts = site.posts %}
+      {% assign minutes = site.minutes %}
+    {% endif %}
+
+    <div class="row">
+      <div class="column" align="left">
+        {%- if posts.size > 0 -%}
+          {%- if page.list_title -%}
+            <h2 class="post-list-heading">{{ page.list_title }}</h2>
+          {%- endif -%}
+          <ul class="post-list">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {%- for post in posts -%}
+            <li>
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </li>
+            {%- endfor -%}
+          </ul>
+      </div>
+      <div class="column" align="left">
+        {%- if minutes.size > 0 -%}
+          <h2 class="post-list-heading">Meeting minutes</h2>
         {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+        <ul class="post-list">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {%- for minutes in minutes -%}
+          <li>
+            <span class="post-meta">{{ minutes.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ minutes.url | relative_url }}">
+                {{ minutes.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ minutes.excerpt }}
+            {%- endif -%}
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
 
     {% if site.paginate %}
       <div class="pager">
@@ -55,7 +80,5 @@ layout: default
         </ul>
       </div>
     {%- endif %}
-
   {%- endif -%}
-
 </div>
