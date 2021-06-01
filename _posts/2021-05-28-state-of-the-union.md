@@ -21,7 +21,7 @@ following recent highlights:
 
 Overall, we're in a really good place for Aquarium. Glass is based on Google's
 Angular & Angular Material framework. The entire code is written in TypeScript
-which is transpired into JavaScript to be able to run on various browsers.
+which is transpiled into JavaScript to be able to run on various browsers.
 We decided to only support browsers that support ECMAScript 2015 (ES6), see
 [Can I  use ___?](https://caniuse.com/es6).
 
